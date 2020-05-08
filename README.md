@@ -4,7 +4,9 @@ To find all possible combinations from an array of float elements given and a de
 # Below you can see the program:
 
 print("Welcome! \n Here, you will get all possible combinations from an array for a total quantity.\n")
+
 #n = int(input("Input the total number of elements: "))
+
 print("Input the elements (Remember to use space between numbers, \n once ready press enter):\n ")
 x = [float(i) for i in input().split()]
 obo = float(input("\nInput the total: "))
@@ -15,7 +17,7 @@ def programa(numbers, target, partial=[]):
         print("%s=%s" % (partial, target))
     if s >= target:
         return
-
+        
     for i in range(len(numbers)):
         n = numbers[i]
         remaining = numbers[i+1:]
